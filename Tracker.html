@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Patient Incident Tracker | NurseWebiLearn</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      background-color: #f2dfee;
+      margin: 0;
+      padding: 0;
+    }
+    header {
+      background-color: #990c7d;
+      color: white;
+      text-align: center;
+      padding: 1.5rem;
+    }
+    main {
+      max-width: 800px;
+      margin: 2rem auto;
+      background: white;
+      padding: 2rem;
+      border-radius: 8px;
+      box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+    }
+    h2 {
+      text-align: center;
+      color: #990c7d;
+    }
+    form label {
+      display: block;
+      margin-top: 1rem;
+      font-weight: bold;
+    }
+    input, select, textarea {
+      width: 100%;
+      padding: 0.6rem;
+      margin-top: 0.3rem;
+      border: 1px solid #ccc;
+      border-radius: 4px;
+    }
+    textarea {
+      resize: vertical;
+    }
+    button {
+      margin-top: 1.5rem;
+      padding: 0.8rem 1.5rem;
+      background-color: #990c7d;
+      color: white;
+      border: none;
+      border-radius: 4px;
+      cursor: pointer;
+    }
+    button:hover {
+      background-color: #f7e6f7;
+    }
+    footer {
+      text-align: center;
+	  color: white;
+      padding: 1rem;
+      background-color: #990c7d;
+      margin-top: 2rem;
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    <h1>Patient Incident Tracker</h1>
+    <p>Promoting a Culture of Safety and Accountability</p>
+  </header>
+
+  <main>
+    <h2>Report a Safety Incident</h2>
+    <form action="#" method="post">
+      <label for="date">Date of Incident:</label>
+      <input type="date" id="date" name="date" required>
+
+      <label for="unit">Unit/Department:</label>
+      <input type="text" id="unit" name="unit" placeholder="e.g., ICU, Pediatrics" required>
+
+      <label for="type">Type of Incident:</label>
+      <select id="type" name="type" required>
+        <option value="">-- Select Incident Type --</option>
+        <option value="medication">Medication Error</option>
+        <option value="fall">Patient Fall</option>
+        <option value="infection">Hospital-Acquired Infection</option>
+        <option value="equipment">Equipment Malfunction</option>
+        <option value="communication">Communication Error</option>
+        <option value="other">Other</option>
+      </select>
+
+      <label for="description">Description of Incident:</label>
+      <textarea id="description" name="description" rows="5" placeholder="Describe what happened, who was involved, and any immediate action taken..." required></textarea>
+
+      <label for="witness">Witnesses (if any):</label>
+      <input type="text" id="witness" name="witness" placeholder="e.g., Jane Doe, RN">
+
+      <label for="followup">Follow-Up Action Taken:</label>
+      <textarea id="followup" name="followup" rows="3" placeholder="Any steps taken to mitigate or report the incident..."></textarea>
+
+      <button type="submit">Submit Incident Report</button>
+    </form>
+  </main>
+
+  <footer>
+    <p>2025 NursesWebiLearn.org | All reports are confidential and secure.</p>
+  </footer>
+
+</body>
+</html>

@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>NurseWebiLearn | Interactive Learning Hub</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      background: #f2dfee;
+      margin: 0;
+      padding: 0;
+    }
+    header {
+      background: #990c7d;
+      color: white;
+      padding: 1rem 2rem;
+      text-align: center;
+    }
+    nav {
+      text-align: center;
+      padding: 0.5rem;
+      background: #942e7e;
+    }
+    nav a {
+      color: white;
+      margin: 0 1rem;
+      text-decoration: none;
+      font-weight: bold;
+    }
+    main {
+      max-width: 1000px;
+      margin: 2rem auto;
+      padding: 1rem;
+      background: white;
+      border-radius: 8px;
+    }
+    section {
+      margin-bottom: 2rem;
+    }
+    .grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+      gap: 1rem;
+    }
+    .card {
+      background: #f7e6f7;
+      padding: 1rem;
+      border-radius: 6px;
+      box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+      text-align: center;
+    }
+    .btn {
+      display: inline-block;
+      padding: 0.6rem 1.2rem;
+      margin-top: 0.5rem;
+      background: #990c7d;
+      color: white;
+      text-decoration: none;
+      border-radius: 4px;
+    }
+    footer {
+      text-align: center;
+	  color: white;
+      padding: 1rem;
+      background: #990c7d;
+      margin-top: 2rem;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>Interactive Learning Hub</h1>
+    <p>Develop skills. Earn CE credits. Improve patient safety.</p>
+  </header>
+
+  <nav>
+    <a href="index.html">Home</a>
+    <a href="#">Courses</a>
+    <a href="#">Quizzes</a>
+    <a href="#">Videos</a>
+    <a href="#">Resources</a>
+  </nav>
+
+  <main>
+    <section>
+      <h2>Featured Learning Modules</h2>
+      <div class="grid">
+        <div class="card">
+          <h3>Infection Control 101</h3>
+          <p>Learn how to apply WHO’s hand hygiene and PPE protocols.</p>
+          <a href="https://www.who.int/teams/integrated-health-services/infection-prevention-control/hand-hygiene" class="btn">Start Module</a>
+        </div>
+        <div class="card">
+          <h3>Safe Medication Administration</h3>
+          <p>Review the 5 Rights and common high-alert drug risks.</p>
+          <a href="https://www.pharmacytimes.com/view/stay-aware-of-common-high-alert-medications" class="btn">Start Module</a>
+        </div>
+        <div class="card">
+          <h3>Fall Prevention Strategies</h3>
+          <p>Interactive case studies and risk assessment tools.</p>
+          <a href="#" class="btn">Start Module</a>
+        </div>
+      </div>
+    </section>
+
+    <section>
+      <h2>Interactive Quizzes</h2>
+      <div class="grid">
+        <div class="card">
+          <h3>Medication Safety Quiz</h3>
+          <p>10-question practice quiz with instant feedback.</p>
+          <a href="#" class="btn">Take Quiz</a>
+        </div>
+        <div class="card">
+          <h3>Infection Control Check</h3>
+          <p>Assess your PPE and hand hygiene knowledge.</p>
+          <a href="#" class="btn">Take Quiz</a>
+        </div>
+      </div>
+    </section>
+
+    <section>
+      <h2>Clinical Video Library</h2>
+      <div class="grid">
+        <div class="card">
+          <h3>How to Don & Doff PPE</h3>
+          <video controls width="100%">
+            <source src="ppe-demo.mp4" type="video/mp4">
+            Your browser does not support the video tag.
+          </video>
+        </div>
+        <div class="card">
+          <h3>Administering SubQ Injections</h3>
+          <video controls width="100%">
+            <source src="subq-injection.mp4" type="video/mp4">
+            Your browser does not support the video tag.
+          </video>
+        </div>
+      </div>
+    </section>
+
+    <section>
+      <h2>Downloadable Resources</h2>
+      <ul>
+        <li><a href="#">Patient Safety Checklist (PDF)</a></li>
+        <li><a href="#">Fall Risk Assessment Tool</a></li>
+        <li><a href="#">Nurse Shift Handoff SBAR Template</a></li>
+      </ul>
+    </section>
+  </main>
+
+  <footer>
+    <p>2025 NursesWebiLearn.org | Interactive Learning Hub</p>
+  </footer>
+</body>
+</html>

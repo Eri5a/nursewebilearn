@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>Login | NurseWebiLearn</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      background: #f2dfee;
+      margin: 0;
+      padding: 0;
+    }
+
+    header {
+      background-color: #990c7d;
+      color: white;
+      padding: 2rem;
+      text-align: center;
+    }
+
+    main {
+      max-width: 400px;
+      margin: 3rem auto;
+      padding: 2rem;
+      background: white;
+      border-radius: 8px;
+      box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+    }
+
+    h2 {
+      text-align: center;
+      color: #990c7d;
+      margin-top: 0;
+    }
+
+    form label {
+      display: block;
+      margin: 1rem 0 0.5rem;
+      font-weight: bold;
+    }
+
+    input[type="text"],
+    input[type="password"] {
+      width: 100%;
+      padding: 0.6rem;
+      border: 1px solid #ccc;
+      border-radius: 4px;
+    }
+
+    button {
+      width: 100%;
+      padding: 0.8rem;
+      background-color: #990c7d;
+      color: white;
+      border: none;
+      border-radius: 4px;
+      margin-top: 1.5rem;
+      font-size: 1rem;
+      cursor: pointer;
+    }
+
+    button:hover {
+      background-color: #f2dfee;
+    }
+
+    .extra {
+      text-align: center;
+      margin-top: 1rem;
+    }
+
+    .extra a {
+      color: #0073b1;
+      text-decoration: none;
+    }
+
+    footer {
+      text-align: center;
+      padding: 1rem;
+      background-color: #990c7d;
+	  color:white;
+      margin-top: 2rem;
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    <h1>NurseWebiLearn</h1>
+    <p>Secure Login Portal</p>
+  </header>
+
+  <main>
+    <h2>Login</h2>
+    <form action="#" method="post">
+      <label for="username">Username</label>
+      <input type="text" id="username" name="username" required />
+
+      <label for="password">Password</label>
+      <input type="password" id="password" name="password" required />
+
+      <button type="submit">Login</button>
+    </form>
+
+    <div class="extra">
+      <p><a href="#">Forgot password?</a> | <a href="#">Create an account</a></p>
+    </div>
+  </main>
+
+  <footer>
+    <p> 2025 NurseWebiLearn | All rights reserved.</p>
+  </footer>
+
+</body>
+</html>
